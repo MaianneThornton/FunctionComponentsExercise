@@ -72,6 +72,7 @@ function GhostbustersAll() {
       <MassHysteria />
       <GhostbustersLogo />
       <ToolsTalent />
+      <DiceRoll />
     </div>
   );
 }
@@ -90,7 +91,7 @@ function DiceRoll() {
   // If either die1 or die2 is NOT equal to 1 sets the text for the h1 to the values for each die like shown in this example: 2 & 5.
   return (
     <div>
-      <h1>{die1 === 1 && die2 === 1 ? `SNAKE EYES` : `${die1} ${die2}`}</h1>
+      <h1>{die1 === 1 && die2 === 1 ? `SNAKE EYES` : `${die1} & ${die2}`}</h1>
     </div>
   )
 };
@@ -112,7 +113,7 @@ ReactDOM.render(
   // <MassHysteria/>,
   // <GhostbustersLogo/>,
   // <ToolsTalent />,
-  // <GhostbustersAll />,
-  <DiceRoll />,
+  <GhostbustersAll />,
+  // <DiceRoll />,
   document.getElementById(`root`)
 );
